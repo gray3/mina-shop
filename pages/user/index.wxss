@@ -1,0 +1,124 @@
+page {
+  background-color: #ebece7;
+}
+.user {
+  height: 45vh;
+  position: relative;
+}
+.user .user_img {
+  position: relative;
+}
+.user .user_img .user_bg {
+  height: 45vh;
+  filter: blur(10rpx);
+  -webkit-filter: blur(10rpx);
+}
+.user .user_img .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+.user .user_img .user_info .user_avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user .user_img .user_info .user_name {
+  color: #fff;
+  font-size: 35rpx;
+  margin-top: 40rpx;
+}
+.user .no_login {
+  width: 100%;
+  height: 100%;
+  background-color: var(--themeColor);
+  position: relative;
+}
+.user .no_login navigator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  text-align: center;
+  color: greenyellow;
+  border: 1rpx solid greenyellow;
+  padding: 20rpx 35rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+  color: #595a56;
+}
+.user_content .user_main .user_history {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  background-color: #fff;
+}
+.user_content .user_main .user_history navigator {
+  flex: 1;
+  padding: 10rpx 0;
+}
+.user_content .user_main .user_history navigator .history_num {
+  color: var(--themeColor);
+}
+.user_content .user_main .user_history navigator .history_title {
+  font-size: 26rpx;
+}
+.user_content .user_main .user_order {
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+.user_content .user_main .user_order .order_title {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .user_order .order_content {
+  display: flex;
+}
+.user_content .user_main .user_order .order_content navigator {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx;
+}
+.user_content .user_main .user_order .order_content navigator .iconfont {
+  font-size: 45rpx;
+  color: var(--themeColor);
+}
+.user_content .user_main .user_order .order_content navigator .order_name {
+  font-size: 26rpx;
+}
+.user_content .user_main .user_address {
+  background-color: #fff;
+  margin-top: 30rpx;
+  padding: 20rpx;
+}
+.user_content .user_main .other {
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+.user_content .user_main .other .other_item {
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+}
+.user_content .user_main .other .other_contect {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .recommend {
+  margin: 30rpx 0;
+  height: 100%;
+  font-size: 28rpx;
+  color: #595a56;
+  background-color: #fff;
+}

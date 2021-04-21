@@ -1,0 +1,52 @@
+page{
+    background-color: #f1f4f5;
+}
+
+.collect_main{
+    .collect_bar{
+        padding: 40rpx 0;
+        .collect_bar_text{
+            text-align: center;
+            padding: 15rpx;
+            margin-left: 20rpx;
+            background-color: #fff;
+            border: 1rpx solid #ccc;
+        }
+        .active{
+            color: var(--themeColor);
+            border: 1rpx solid currentColor;
+        }
+    }
+    .collect_list{
+        .goods_item{
+            display: flex;
+            border-bottom: 1rpx solid #ccc;
+            background-color: #fff;
+            .goods_image{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width: 70%;
+                }
+            }
+            .goods_info{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .good_name{
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+                .good_price{
+                    color: var(--themeColor);
+                    font-size: 32rpx;
+                }
+            }
+        }
+    }
+}

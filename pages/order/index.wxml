@@ -1,0 +1,20 @@
+<view>
+    <Tabs tabs="{{tabs}}" bindtabsChange="handleTapChange">
+        <view class="order_main">
+            <view class="order_row" wx:for="{{orders}}" wx:key="order_id">
+                <view class="order_row_item">
+                    <view class="order_id_text">订单编号</view>
+                    <view class="order_id_value">{{item.order_id}}</view>
+                </view>
+                <view class="order_row_item">
+                    <view class="order_price_text">订单价格</view>
+                    <view class="order_price_value">¥{{item.order_price}}</view>
+                </view>
+                <view class="order_row_item">
+                    <view class="order_id_text">订单日期</view>
+                    <view class="order_id_value">{{item.order_date}}</view>
+                </view>
+            </view>
+        </view>
+    </Tabs>
+</view>

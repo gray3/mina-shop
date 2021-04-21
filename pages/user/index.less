@@ -1,0 +1,125 @@
+page{
+    background-color: #ebece7;
+}
+.user{
+    height: 45vh;
+    position: relative;
+    .user_img {
+        position: relative;
+        .user_bg{
+            height: 45vh;
+            filter: blur(10rpx);
+            -webkit-filter: blur(10rpx);
+        }
+        .user_info{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 30%;
+            text-align: center;
+            .user_avatar{
+                width: 150rpx;
+                height: 150rpx;
+                border-radius: 50%;
+            }
+            .user_name{
+                color: #fff;
+                font-size: 35rpx;
+                margin-top: 40rpx;
+            }
+        }
+    }
+    .no_login{
+        width: 100%;
+        height: 100%;
+        background-color: var(--themeColor);
+        position: relative;
+        navigator{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 40%;
+            text-align: center;
+            color: greenyellow;
+            border: 1rpx solid greenyellow;
+            padding: 20rpx 35rpx;
+            font-size: 30rpx;
+            border-radius: 10rpx;
+        }
+    }
+}
+
+.user_content{
+    position: relative;
+    .user_main{
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40rpx;
+        color: #595a56;
+        .user_history{
+            text-align: center;
+            flex: 1;
+            display: flex;
+            background-color: #fff;
+            navigator{
+                flex: 1;
+                padding: 10rpx 0;
+                .history_num{
+                    color: var(--themeColor);
+                }
+                .history_title{
+                    font-size: 26rpx;
+                }
+            }
+        }
+        .user_order{
+            background-color: #fff;
+            margin-top: 30rpx;
+            .order_title{
+                padding: 20rpx;
+                border-bottom: 1rpx solid #ccc;
+            }
+            .order_content{
+                display: flex;
+                navigator{
+                    flex: 1;
+                    text-align: center;
+                    padding: 10rpx;
+                    .iconfont{
+                        font-size: 45rpx;
+                        color: var(--themeColor);
+                    }
+                    .order_name{
+                        font-size: 26rpx;
+                    }
+                }
+            }
+        }
+        .user_address{
+            background-color: #fff;
+            margin-top: 30rpx;
+            padding: 20rpx;
+        }
+        .other{
+            background-color: #fff;
+            margin-top: 30rpx;
+            .other_item{
+                border-bottom: 1rpx solid #ccc;
+                padding: 20rpx;
+            }
+            .other_contect{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .recommend{
+            margin: 30rpx 0;
+            height: 100%;
+            font-size: 28rpx;
+            color: #595a56;
+            background-color: #fff;
+        }
+    }
+}

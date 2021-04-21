@@ -1,0 +1,4 @@
+<view class="Upimg_wrap">
+    <image src="{{src}}" />
+    <icon type="clear" size="20" color="red" bindtap="deleteImg"></icon>
+</view>

@@ -1,0 +1,27 @@
+<view>
+    <Tabs tabs="{{tabs}}" bindtabsChange="handleTapChange">
+        <view class="problem_main">
+            <view class="problem_kind_title">问题的种类</view>
+            <view class="problem_kind_content">
+                <view bindtap="changeProblem" data-index="{{item.id}}" class="problem_kind_item {{item.isActive?'active':''}}" wx:for="{{problemKind}}" wx:key="id">
+                    {{item.value}}
+                </view>
+            </view>
+            <view class="problem_content">
+                <textarea placeholder="请描述您的问题" value="{{textValue}}" bindinput="handlleInput"></textarea>
+                <view class="select_img">
+                    <button bindtap="hangleChooesImg">+</button>
+                    <view class="img_up" wx:for="{{chooseImg}}" wx:key="*this">
+                        <Upimg src="{{item}}" index="{{index}}" binddeleteImg="handledeleteImg"></Upimg>
+                    </view>
+                </view>
+            </view>
+            <view class="commit_btn">
+                <button type="warn" bindtap="handleBtn">
+                    <icon type="success_no_circle" size="23" color="white"></icon>
+                    提交
+                </button>
+            </view>
+        </view>
+    </Tabs>
+</view>
