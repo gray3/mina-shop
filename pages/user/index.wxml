@@ -61,7 +61,7 @@
             <view class="other">
                 <view class="other_item other_contect">
                     <text>联系我们</text>
-                    <text>13433613915</text>
+                    <text>11111111111</text>
                 </view>
                 <navigator class="other_item" url="/pages/feedback/index">意见反馈</navigator>
                 <view class="other_item">关于我们</view>
